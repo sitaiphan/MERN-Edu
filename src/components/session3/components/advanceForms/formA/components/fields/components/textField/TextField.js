@@ -43,10 +43,10 @@ export default function TextField({ label1, title1, label2, title2 }) {
       <Formik
         validationSchema={SignupSchema}
         initialValues={{
-          firstName: "Binh",
-          lastName: "Doan Thanh",
-          email: "binh.quatest2@gmail.com",
-          phoneNumber: "0879806806",
+          firstName: "Tai",
+          lastName: "Phan Si",
+          email: "tai.quatest2@gmail.com",
+          phoneNumber: "0932453357",
         }}
       >
         <Form className={styles.container_form}>

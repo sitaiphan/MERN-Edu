@@ -52,7 +52,7 @@ export default function FormA() {
       <Formik
         validationSchema={SignupSchema}
         initialValues={{
-          email: "binh.quatest2@gmail.com",
+          email: "tai.quatest2@gmail.com",
           password: "",
         }}
         onSubmit={() => {

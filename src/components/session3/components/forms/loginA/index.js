@@ -47,7 +47,7 @@ export default function LoginA() {
       <Formik
         validationSchema={SignupSchema}
         initialValues={{
-          email: "binh.quatest2@gmail.com",
+          email: "tai.quatest2@gmail.com",
           password: "",
         }}
         onSubmit={() => {
@@ -62,7 +62,7 @@ export default function LoginA() {
               id="email"
               name="email"
               label="Email"
-              defaultValue="binh.quatest2@gmail.com"
+              defaultValue="tai.quatest2@gmail.com"
               variant="filled"
               type="email"
               size={"small"}

@@ -45,7 +45,7 @@ export default function LoginB() {
       <Formik
         validationSchema={SignupSchema}
         initialValues={{
-          name: "binh.quatest2@gmail.com",
+          name: "tai.quatest2@gmail.com",
           password: "",
         }}
         onSubmit={() => {

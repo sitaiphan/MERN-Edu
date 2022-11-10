@@ -45,7 +45,7 @@ export default function LoginC() {
       <Formik
         validationSchema={SignupSchema}
         initialValues={{
-          name: "binh.quatest2@gmail.com",
+          name: "tai.quatest2@gmail.com",
           password: "",
         }}
         onSubmit={() => {
@@ -61,10 +61,10 @@ export default function LoginC() {
               <div className={styles.signupForm_footer_title}>
                 <div
                   className={styles.signupForm_footer_title3}
-                >{`Doan Thanh Binh`}</div>
+                >{`Phan Si Tai`}</div>
                 <div
                   className={styles.signupForm_footer_title2}
-                >{`binh.quatest2@gmail.com`}</div>
+                >{`tai.quatest2@gmail.com`}</div>
               </div>
             </div>
 
