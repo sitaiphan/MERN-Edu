@@ -1,0 +1,166 @@
+.app {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .container {
+    padding: 2vw 5vw;
+    color: #3f4b6d;
+    background-color: #fefefe;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container_toolbar {
+      margin-bottom: 4vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .container_toolbar_volumn {
+      }
+    }
+    .container_body {
+      padding: 2vw 1vw 2vw 1vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fe;
+      border-radius: 10px;
+      .container_cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .container_cover_art {
+          margin-bottom: 1.5vw;
+          width: 10vw;
+          height: 10vw;
+          background-repeat: none;
+          background-size: cover;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation-name: disk;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          border: 5px solid white;
+          .cover_art_center {
+            text-align: center;
+            width: 2vw;
+            height: 2vw;
+            background-color: rgba(248, 249, 254, 1);
+            border: 3px solid white;
+            border-radius: 50px;
+          }
+        }
+        @keyframes disk {
+          from {
+            transform: rotate(0);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        .container_cover_art1 {
+          margin-bottom: 1.5vw;
+          width: 10vw;
+          height: 10vw;
+          background-size: cover;
+          background-repeat: none;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .cover_art_center {
+            width: 2vw;
+            height: 2vw;
+            background-color: rgba(248, 249, 254, 1);
+            border: 3px solid white;
+            border-radius: 50px;
+          }
+        }
+
+        .container_cover_title {
+          margin-bottom: 1vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h4 {
+            font-weight: 700;
+            font-size: 1.3vw;
+            text-align: center;
+          }
+          p {
+            font-size: 1vw;
+            color: #babcc8;
+            text-align: center;
+          }
+        }
+      }
+      .container_actions {
+        margin-bottom: 2vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        color: #babcc8;
+      }
+      .container_seekbar {
+        width: 100%;
+        color: #babcc8;
+        margin-bottom: 5px;
+        .container_seekbar_slider {
+          width: 100%;
+          height: 2px;
+          border-radius: 8px;
+          appearance: none;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+          background: #babcc8;
+        }
+        .container_seekbar_slider::-webkit-slider-thumb {
+          appearance: none;
+          width: 1.2vmax;
+          height: 1.2vmax;
+          border-radius: 50%;
+          background: #09f;
+          cursor: pointer;
+        }
+      }
+      .container_content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 1vw;
+          color: #babcc8;
+        }
+      }
+    }
+    .container_controls {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 2vw;
+      .container_controls_pause {
+        animation-name: pause;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes pause {
+        from {
+          opacity: 1;
+          transform: scale(2);
+          color: #ff6914;
+        }
+        to {
+          opacity: 0.5;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
