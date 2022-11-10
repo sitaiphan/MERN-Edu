@@ -63,7 +63,7 @@ export default function LoginB() {
               >{`Let's create a new account for`}</p>
               <h5
                 className={styles.signupForm_footer_title2}
-              >{`binh.quatest2@gmail.com`}</h5>
+              >{`tai.quatest2@gmail.com`}</h5>
             </div>
             <TextField
               className={styles.formik_signupForm_field}
